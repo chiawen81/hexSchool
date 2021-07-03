@@ -1,0 +1,197 @@
+/* 可共用CSS */
+
+/* 排版 */
+
+.m_r_16 {
+    margin-right: 16px;
+}
+
+.m_t_0 {
+    margin-top: 0px !important;
+}
+
+.m_t_8 {
+    margin-top: 8px !important;
+}
+
+.m_t_16 {
+    margin-top: 16px !important;
+}
+
+.m_t_40 {
+    margin-top: 40px;
+}
+
+.m_b_0 {
+    margin-bottom: 0px !important;
+}
+
+.m_b_8 {
+    margin-bottom: 8px !important;
+}
+
+.m_b_20 {
+    margin-bottom: 20px;
+}
+
+.p_t_32 {
+    padding-top: 32px !important;
+}
+
+.p_b_16 {
+    padding-bottom: 16px !important;
+}
+
+.p_l_24 {
+    padding-left: 24px;
+}
+
+.f_32 {
+    font-size: 32px;
+}
+
+.f_28 {
+    font-size: 28px !important;
+}
+
+.f_24 {
+    font-size: 24px;
+}
+
+.f_20 {
+    font-size: 20px !important;
+}
+
+.w_70 {
+    width: 70% !important;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 40px 180px;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.display_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1 !important;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.txt_w {
+    color: white;
+}
+
+.title_b {
+    font-size: 32px !important;
+}
+
+.title_r {
+    font-size: 24px;
+    color: #A00404;
+}
+
+.l_h_15 {
+    line-height: 1.5;
+}
+
+.txt_center {
+    text-align: center;
+}
+
+.hr_main {
+    border: 2px solid #000000;
+}
+
+.hr_para {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000000;
+    ;
+}
+
+/* 個別樣式 */
+
+.img_profile {
+    width: 324px;
+    padding: 48px 0;
+}
+
+.area1 {
+    margin-bottom: 80px;
+}
+
+.area2 {
+    margin-bottom: 72px;
+}
+
+.area3 {
+    background-color: #415165;
+    padding: 32px 102px;
+    margin-bottom: 72px;
+}
+
+.area3_top_line {
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.display_flex span {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.area3_left_line {
+    border-left: 1px solid #FFFFFF;
+    padding-left: 24px;
+}
+
+.area3_title_main {
+    font-size: 32px !important;
+    font-weight: normal !important;
+}
+
+.area3_title_sec {
+    font-size: 24px;
+    font-weight: 600 !important;
+}
+
+.area4_left_line {
+    border-left: 1px solid #96A9C4;
+    padding-left: 24px;
+    margin-left: 24px;
+}
+
+footer {
+    width: 100%;
+    padding: 24px 0 48px 0;
+    margin: 0 0;
+    background-color: #415165;
+    color: #FFFFFF;
+}
+
+.area5 {
+    display: flex;
+    justify-content: center;
+}

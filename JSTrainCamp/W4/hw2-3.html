@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二階段</title>
+</head>
+
+<body>
+    第二階段：請程式碼裡加入此變數，並嘗試運用此變數裡的資訊。
+    printBmi(178, 20) >> 印出 console.log 文字為「您的體重過輕，健康指數為藍色」
+    printBmi(178, 70) >> 印出 console.log 文字為「您的體重正常，健康指數為紅色」
+    printBmi(178, 85)>> 印出 console.log 文字為「您的體重過重，健康指數為澄色」
+    printBmi(178, 90)>> 印出 console.log 文字為「您的體重輕度肥胖，健康指數為黃色」
+    printBmi(178, 110)>> 印出 console.log 文字為「您的體重中度肥胖，健康指數為黑色」
+    printBmi(178, 130)>> 印出 console.log 文字為「您的體重重度肥胖，健康指數為綠色」
+    printBmi("身高","體重")>> 印出 console.log 文字為「您的數值輸入錯誤，請重新輸入」
+
+    BMI=身高/體重(公尺)的平方
+
+    <!-- 體重過輕 BMI < 18.5
+    正常範圍 18.5 <= BMI < 24
+    過重 24 <= BMI< 27
+    輕度肥胖 27 <= BMI < 30
+    中度肥胖 30 <= BMI < 35
+    重度肥胖 BMI >= 35 -->
+    <script>
+        // 5mins
+        // ————————————  加入變數  ——————————
+        const bmiStatesData = {
+            "overThin": {
+                "state": "過輕",
+                "color": "藍色"
+            },
+            "normal": {
+                "state": "正常",
+                "color": "紅色"
+            },
+            "overWeight": {
+                "state": "過重",
+                "color": "澄色"
+            },
+            "mildFat": {
+                "state": "輕度肥胖",
+                "color": "黃色"
+            },
+            "moderateFat": {
+                "state": "中度肥胖",
+                "color": "黑色"
+            },
+            "severeFat": {
+                "state": "重度肥胖",
+                "color": "綠色"
+            },
+        }
+
+
+        function printBmi(height, weight) {
+            var BMI = weight / ((height / 100) * (height / 100));
+
+            if (BMI < 18.5) {
+                showText("overThin");
+            } else if (18.5 <= BMI && BMI < 24) {
+                showText("normal");
+
+            } else if (24 <= BMI && BMI < 27) {
+                showText("overWeight");
+
+            } else if (27 <= BMI && BMI < 30) {
+                showText("mildFat");
+
+            } else if (30 <= BMI && BMI < 35) {
+                showText("moderateFat");
+
+            } else if (BMI >= 35) {
+                showText("severeFat");
+
+            } else {
+                console.log(`您的輸入值錯誤！`);
+
+
+            };
+
+        }
+
+
+        function showText(status){
+            console.log(`您的體重${bmiStatesData[status].state}，健康指數為${bmiStatesData[status].color}`);
+
+        }
+
+
+        printBmi(178, 20);
+        printBmi(178, 70);
+        printBmi(178, 85);
+        printBmi(178, 90);
+        printBmi(178, 110);
+        printBmi(178, 130);
+        printBmi("身高", "體重");
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

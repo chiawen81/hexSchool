@@ -1,0 +1,12 @@
+.container{
+  padding: 30px 50px;
+}
+
+.area{
+  margin-bottom: 50px;
+}
+
+.choicedBtn {
+  background-color: rgb(14, 65, 235);
+  color: white
+}

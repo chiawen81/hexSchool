@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    第三階段：儲存每筆計算資料，多一個變數為 bmiHistoryData，並賦予空陣列來儲存計算物件資料，若數值輸入錯誤，則不儲存。
+    printBmi(178, 20) >> 印出 console.log 文字為「您的體重過輕，健康指數為藍色」
+    printBmi(178, 70) >> 印出 console.log 文字為「您的體重正常，健康指數為紅色」
+    printBmi(178, 85)>> 印出 console.log 文字為「您的體重過重，健康指數為澄色」
+    showHistoryData() >> 印出 console.log 文字為「您總共計算 3 次 BMI 紀錄，最後一次 BMI 指數為 26.83，體重過重！健康指數為澄色！」
+
+    BMI=身高/體重(公尺)的平方
+
+    體重過輕 BMI ＜ 18.5
+    正常範圍 18.5≦BMI＜24
+    過重 24≦BMI＜27
+    輕度肥胖 27≦BMI＜30
+    中度肥胖 30≦BMI＜35
+    重度肥胖 BMI≧35
+    <script>
+        // 第三階段
+        // ————————————  加入變數  ——————————
+        var cauCount = 0;                       // 計算次數
+        var bmiHistoryData = [];                // 儲存資料用
+        var obj = {
+            value: null,
+            state: null,
+            color: null
+        }
+
+        const bmiStatesData = {
+            "overThin": {
+                "state": "過輕",
+                "color": "藍色"
+            },
+            "normal": {
+                "state": "正常",
+                "color": "紅色"
+            },
+            "overWeight": {
+                "state": "過重",
+                "color": "澄色"
+            },
+            "mildFat": {
+                "state": "輕度肥胖",
+                "color": "黃色"
+            },
+            "moderateFat": {
+                "state": "中度肥胖",
+                "color": "黑色"
+            },
+            "severeFat": {
+                "state": "重度肥胖",
+                "color": "綠色"
+            },
+        }
+
+
+
+        // ————————————  printBmi函式  ——————————
+        function printBmi(height, weight) {
+            // 宣告變數、整理
+            var heightTrans = height * 0.01
+            var BMI = weight / (heightTrans * heightTrans)
+            // console.log(BMI)
+
+            // 判斷
+            if (BMI < 18.5) {
+                remindText('overThin', BMI);
+            } else if (18.5 <= BMI && BMI < 24) {
+                remindText('normal', BMI);
+            } else if (24 <= BMI && BMI < 27) {
+                remindText('overWeight', BMI);
+            } else if (27 <= BMI && BMI < 30) {
+                remindText('mildFat', BMI);
+            } else if (30 <= BMI && BMI < 35) {
+                remindText('moderateFat', BMI);
+            } else if (BMI >= 35) {
+                remindText('severeFat', BMI);
+            } else {
+                console.log('您的數值輸入錯誤，請重新輸入');
+            };
+        };
+
+
+
+        // // ————————————  remindText函式  ——————————
+        // function remindText(status, BMIValue) {
+        //     console.log(`您的體重${bmiStatesData[status].state}，健康指數為${bmiStatesData[status].color}`);
+        //     bmiHistoryData[cauCount].value = BMIValue;
+        //     bmiHistoryData[cauCount].state = bmiStatesData[status].state;
+        //     bmiHistoryData[cauCount].color = bmiStatesData[status].color;
+        //     cauCount += 1;
+        // };
+
+        // ————————————  remindText函式  ——————————
+        function remindText(status, BMIValue) {
+            // console.log(BMIValue)
+            console.log(`您的體重${bmiStatesData[status].state}，健康指數為${bmiStatesData[status].color}`);
+            // console.log(bmiStatesData[status].state)
+            obj.value = BMIValue;
+            obj.state = bmiStatesData[status].state;
+            obj.color = bmiStatesData[status].color;
+            bmiHistoryData.push(obj);
+            cauCount += 1;
+            // console.log(obj.state)
+            // console.log(obj)
+        };
+
+
+        // ————————————  showHistoryData函式  ——————————
+        function showHistoryData() {
+            // console.log(bmiHistoryData[cauCount - 1]);
+            console.log(`您總共計算${cauCount}次BMI 紀錄，最後一次 BMI 指數為${bmiHistoryData[cauCount - 1].value}，體重${bmiHistoryData[cauCount - 1].state}！健康指數為${bmiHistoryData[cauCount - 1].color}！`);
+        }
+
+        // ————————————  執行  ——————————
+        printBmi(178, 20);
+        printBmi(178, 70);
+        printBmi(178, 85);
+        showHistoryData();
+
+    </script>
+
+
+
+</body>
+
+</html>

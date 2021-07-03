@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一階段</title>
+</head>
+
+<body>
+    // 第一階段：請寫 printBmi 函式，並印出對應狀態
+    // printBmi(178, 20) >> 印出 console.log 文字為「您的體重過輕」
+    // printBmi(178, 70) >> 印出 console.log 文字為「您的體重正常」
+    // printBmi(178, 85)>> 印出 console.log 文字為「您的體重過重」
+    // printBmi(178, 90)>> 印出 console.log 文字為「您的體重輕度肥胖」
+    // printBmi(178, 110)>> 印出 console.log 文字為「您的體重中度肥胖」
+    // printBmi(178, 130)>> 印出 console.log 文字為「您的體重重度肥胖」
+    // printBmi("身高","體重")>> 印出 console.log 文字為「您的數值輸入錯誤，請重新輸入
+
+    <!-- 體重過輕 BMI < 18.5
+    正常範圍 18.5 <= BMI < 24
+    過重 24 <= BMI< 27
+    輕度肥胖 27 <= BMI < 30
+    中度肥胖 30 <= BMI < 35
+    重度肥胖 BMI>=35 -->
+    <script>
+        function printBmi(height, weight) {
+            let BMI = weight / ((height / 100) * (height / 100));
+            if (BMI < 18.5) {
+                console.log(`您的體重過輕`);
+            } else if (18.5 <= BMI && BMI < 24) {
+                console.log(`您的體重適中`);
+            } else if (24 <= BMI && BMI < 27) {
+                console.log(`您的體重過正`);
+            } else if (27 <= BMI && BMI < 30) {
+                console.log(`您的體重輕度肥胖`);
+            } else if (30 <= BMI && BMI < 35) {
+                console.log(`您的體重中度肥胖`);
+            } else if (BMI >= 3) {
+                console.log(`您的體重重度肥胖`);
+            } else {
+                console.log(`您的數值輸入錯誤，請重新輸入`)
+            }
+
+        }
+
+
+        printBmi(178, 20);
+    printBmi(178, 70);
+    printBmi(178, 85);
+    printBmi(178, 90);
+    printBmi(178, 110);
+    printBmi(178, 130);
+    printBmi("身高","體重");
+
+
+    </script>
+
+</body>
+
+</html>
