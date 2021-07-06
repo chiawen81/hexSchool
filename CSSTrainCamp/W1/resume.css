@@ -42,7 +42,8 @@ line-height: 12px;
     padding-bottom: 24px !important;
 }
 
-.box{
+.areaFull{
+    padding:24px 462px ;
     color: white;
     background-color: #415165;
 }
