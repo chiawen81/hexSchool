@@ -1,49 +1,101 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    margin: 37px 360px;
+  margin: 37px 360px;
 }
 
 .name {
-    font: normal normal normal 80px/106px Roboto;
+  font: normal normal normal 80px/106px Roboto;
 }
 
 .name p {
-    margin: 0;
-    letter-spacing: 0px;
+  margin: 0;
+  letter-spacing: 0px;
 }
 
+/* 第一區 */
 .area {
-    margin-top: 48px;
-    margin-bottom: 80px;
+  margin-top: 48px;
+  margin-bottom: 80px;
 }
 
-.area p.area-title{
-    font-size: 32px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid black
+.area p.area-title {
+  font-size: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid black;
 }
 
 .area p.area-title span {
-    padding-left: 16px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #A00404;
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a00404;
 }
 
-.area p{
-font-size: 24px;
-line-height: 12px;
+.area p {
+  font-size: 24px;
+  line-height: 12px;
 }
 
-.pb24{
-    padding-bottom: 24px !important;
+/* 第二區 */
+.box {
+  border-left: 1px solid #96a9c4;
+  padding-left: 24px;
+  margin-left: 24px;
 }
 
-.areaFull{
-    padding:24px 462px ;
-    color: white;
-    background-color: #415165;
+.box p.area-detail {
+  margin: 0 0 24px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.box .area-list p {
+  font-size: 24px;
+  line-height: 36px;
+}
+.box img {
+  margin: 8px 0;
+}
+
+/* 滿版 */
+.areaFull {
+  padding: 24px 462px 20px; /* 文字"語言"到底為36px==>20px+語言span的pb16px */
+  color: white;
+  background-color: #415165;
+}
+
+.areaFull p {
+  font-size: 32px;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  text-align: center;
+  margin: 0 0 37px 0;
+}
+
+.areaFull p span {
+  font-size: 24px;
+}
+.areaFull .row-down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  margin: 0 auto;
+}
+.areaFull .row-down span {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+/* 個別設定 */
+.pb24 {
+  padding-bottom: 24px !important;
+}
+.mb0 {
+  margin-bottom: 8px !important;
+}
+.fz20 {
+  font-size: 20px;
 }
