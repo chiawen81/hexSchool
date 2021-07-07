@@ -18,13 +18,15 @@
 /* 第一區 */
 .area {
   margin-top: 48px;
-  margin-bottom: 80px;
+  margin-bottom: 72px;
 }
 
 .area p.area-title {
   font-size: 32px;
   padding-bottom: 8px;
+  margin-bottom: 16px;
   border-bottom: 1px solid black;
+  line-height: 1;
 }
 
 .area p.area-title span {
@@ -62,6 +64,7 @@
 /* 滿版 */
 .areaFull {
   padding: 24px 462px 20px; /* 文字"語言"到底為36px==>20px+語言span的pb16px */
+  margin-bottom: 80px;
   color: white;
   background-color: #415165;
 }
@@ -93,9 +96,15 @@
 .pb24 {
   padding-bottom: 24px !important;
 }
+.mt0 {
+  margin-top: 0px !important;
+}
 .mb0 {
-  margin-bottom: 8px !important;
+  margin-bottom: 0px !important;
 }
 .fz20 {
-  font-size: 20px;
+  font-size: 20px !important;
+}
+.mt72 {
+  margin-top: 72px !important;
 }
