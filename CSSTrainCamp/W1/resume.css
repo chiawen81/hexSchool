@@ -61,15 +61,20 @@
   margin: 8px 0;
 }
 
-/* 滿版 */
+/* 滿版共用 */
 .areaFull {
-  padding: 24px 462px 20px; /* 文字"語言"到底為36px==>20px+語言span的pb16px */
+  padding: 24px 0 20px;  
+  /* 文字"語言"到底為36px==>20px+語言span的pb16px */
   margin-bottom: 80px;
   color: white;
   background-color: #415165;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .areaFull p {
+  width: 996px;
   font-size: 32px;
   border-bottom: 1px solid white;
   padding-bottom: 8px;
@@ -84,7 +89,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 200px;
+  padding: 0 0 16px 0;
   margin: 0 auto;
 }
 .areaFull .row-down span {
@@ -92,9 +97,17 @@
   padding-bottom: 16px;
 }
 
+.row-down img{
+    padding-right: 24px;
+}
+
+
 /* 個別設定 */
 .pb24 {
   padding-bottom: 24px !important;
+}
+.pr0{
+    padding-right: 0px !important;
 }
 .mt0 {
   margin-top: 0px !important;
@@ -108,3 +121,7 @@
 .mt72 {
   margin-top: 72px !important;
 }
+.align-items-center{
+align-items: center !important;
+}
+
