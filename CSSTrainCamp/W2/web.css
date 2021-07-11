@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 共用 */
+
+.be-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 64px;
+    font: italic normal medium 64px Roboto;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* 第一區 */
+
+.area1 {
+    width: 100%;
+    height: 958px;
+    background-image: url(../img/w2-pic-main.png);
+    background-position: center center;
+}
+
+.box1 {
+    width: 304px;
+}
+
+.box1 p {
+    color: white;
+    margin: 0;
+}
+
+.socail-icon {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* 第二區 */
+
+.area2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.area2 h2 {
+    margin: 0 0 40px;
+}
+
+.area2 img {
+    margin-bottom: 4px;
+}
+
+ul.list-noDes {
+    border-bottom: 1px solid black;
+}
+
+ul.list-noDes li {
+    list-style: none;
+    text-align: center;
+    line-height: 28px;
+    font: italic normal bold 24px Roboto;
+}
+
+.area2 ul.list-des li {
+    list-style: url("../img/w2-icon-redPoint.png") none inside;
+    text-align: center;
+    line-height: 28px;
+    font: italic normal bold 24px Roboto;
+}
+
+/* 第三區 */
+
+.area3 {
+    background-color: black;
+    color: white;
+    padding: 56px 0 160px;
+    flex-direction: column;
+}
+
+.box3 {
+    margin: 0 auto;
+}
+
+.box3 p {
+    text-align: center;
+    line-height: 30px;
+}
+
+/* 第四區 */
+
+.area4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 96px;
+}
+
+.area4-works {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 48px;
+    padding-left: 0;
+}
+
+.area4-works li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area4-works li img {
+    margin-bottom: 16px;
+}
+
+/* 第五區 */
+
+.area5 {
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding: 64px 0;
+}
+
+/* 個別設定 */
+
+.d_flex {
+    display: flex;
+}
+
+.w320 {
+    width: 320px;
+}
+
+.fz20 {
+    font-size: 20px !important;
+}
+
+.fz24 {
+    font-size: 24px !important;
+}
+
+.fz64 {
+    font-size: 64px;
+}
+
+.fz80 {
+    font-size: 80px !important;
+}
+
+.text-a-center {
+    text-align: center;
+}
+
+.mt0 {
+    margin-top: 0px !important;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.mb12 {
+    margin-bottom: 12px !important;
+}
+
+.mb16 {
+    margin-bottom: 16px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.mr24 {
+    margin-right: 24px;
+}
+
+.mb28 {
+    margin-bottom: 28px !important;
+}
+
+.mb32 {
+    margin-bottom: 32px !important;
+}
+
+.mb40 {
+    margin-bottom: 40px !important;
+}
+
+.mb56 {
+    margin-bottom: 56px !important;
+}
+
+.mb68 {
+    margin-bottom: 68px !important;
+}
+
+.pb24 {
+    padding-bottom: 24px !important;
+}
