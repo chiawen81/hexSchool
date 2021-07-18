@@ -1,0 +1,421 @@
+/* ————————————————————  初始設定  ———————————————————— */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.area {
+    padding: 60px 0 80px 0;
+}
+
+.body {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, span, form, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    color: #650300;
+}
+
+h5, h6, p {
+    color: black;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+}
+li a,li a:visited {
+    color: white;
+}
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ————————————————————  個別設定  ———————————————————— */
+
+/* ----- header ----- */
+
+.header {
+    background-color: #AA0601;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 88px;
+}
+
+.header img {
+    width: 80px;
+    height: 45px;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.menu li {
+    padding-left: 64px;
+    font-size: 20px;
+}
+/* ----- header ----- */
+
+.kv {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png);
+    height: 840px;
+    /* 
+https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png
+*/
+}
+
+.kv-box {
+    width: 576px;
+    padding: 414px 0;
+    margin-right: 0;
+}
+
+.kv-box h3, .kv-box h1 {
+    text-align: right;
+}
+
+/* ----- 品牌特色 ----- */
+
+.feature {
+    background-color: #AA06010D;
+}
+
+.feature ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature ul li {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature ul li img {
+    height: 83px;
+    padding-bottom: 16px;
+}
+
+.feature ul li h4 {
+    padding-bottom: 8px;
+    color: #650300;
+}
+
+/* ----- 經典系列 ----- */
+
+.classic ul li a {
+    display: flex;
+}
+
+.classic ul li img {
+    width: 635px;
+    height: 320px;
+}
+
+.classic ul li h2 {
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.classic ul li h2 img {
+    width: auto;
+    height: 45px;
+    padding-right: 10px;
+}
+
+/* ----- 聯名設計 ----- */
+
+.coBrand {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+    height: 705px;
+}
+
+.coBrand .coBrand-box, .mask {
+    width: 540px;
+    height: 455px;
+}
+
+.coBrand .coBrand-box {
+    position: relative;
+}
+
+.mask {
+    background-color: white;
+    opacity: 0.5;
+}
+
+.coBrand-name {
+    font-size: 72px;
+    color: #AA0601;
+    z-index: 2;
+    position: absolute;
+    top: 187px;
+    left: 95px;
+    width: 350px;
+    text-align: center;
+}
+
+.bg1 {
+    background-image: url(../img/w3-pic-cobrand1.jpeg);
+    background-size: cover;
+    background-position: 30px;
+}
+
+.bg2 {
+    background-image: url(../img/w3-pic-cobrand2.jpeg);
+    background-size: cover;
+    background-position: 30px;
+}
+
+/* ----- 顧客推薦 ----- */
+.consumerREC-area{
+    display: flex;
+    justify-content: space-between;
+}
+.consumerREC-card {
+    max-width: 255px;
+    color: #212529;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+.consumerREC-card img {
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+}
+.consumerREC-card .box {
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.consumerREC-card .span {
+    padding: 16px;
+}
+
+.consumerREC-card .span h6 {
+    font-weight: medium;
+    padding-bottom: 8px;
+}
+
+.consumerREC-card .span p {
+    font-weight: normal;
+}
+
+.box .rec-date {
+    color: #707070;
+    display: block;
+    padding: 16px;
+}
+
+/* ----- 聯絡我們 ----- */
+.contact{
+    background-color: #AA06010D;
+}
+.contact-area{
+   width: 730px; 
+   margin: 0 auto;
+}
+
+form p{
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+form input{
+    width: 730px;
+    height: 50px;
+    padding: 16px;
+}
+.confirm{
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.confirm+span{
+    vertical-align: middle;
+}
+button{
+    display: block;
+    background-color: #AA0601;
+    color: white;
+    width: 350px;
+    height: 54px;
+    margin: 0 auto;
+}
+button a:visited{
+    color: white;
+}
+/* ----- footer ----- */
+.footer{
+    padding: 32px 0 40px;
+    background-color: #AA0601;
+    color: white;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-menu-left,.footer-menu-right{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.footer-menu-left li{
+    padding-right: 48px;
+}
+.footer-menu-right li{
+    padding-left: 48px;
+}
+.footer-contact ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.footer-contact ul li img{
+    width: 36px;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    border-top: 1px solid white;
+}
+.footer-copyright ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* ————————————————————  共用設定  ———————————————————— */
+
+/* 字體大小 */
+
+.fz16 {
+    font-size: 16px;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+/* 字體顏色 */
+
+.red {
+    color: #650300;
+}
+
+.red-bright {
+    color: #AA0601;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.gray {
+    color: #707070;
+}
+
+/* 字體粗細 */
+
+.fw-normal {
+    font-weight: normal;
+}
+
+/* 排版相關 */
+
+.d-flex {
+    display: flex;
+}
+
+.f-dir-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.jc-fe {
+    justify-content: flex-end;
+}
+
+.txt-a-c {
+    text-align: center;
+}
+.mr22{
+    margin-right: 22px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb24 {
+    margin-bottom: 24px;
+}
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb52 {
+    margin-bottom: 52px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+.ml48{
+    margin-left: 48px;
+}
