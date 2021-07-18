@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.container {
+  /* margin: 37px 360px; */
+  width: 1200px;
+  margin: 0 auto;
+}
+ul, h3{
+  list-style:none ;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.name {
+  font: normal normal normal 80px/106px Roboto;
+  border-bottom: 1px solid black;
+  margin: 37px 0 48px 0;
+}
+
+/* 第一區 */
+.area {
+  margin-top: 48px;
+  margin-bottom: 72px;
+}
+
+.area p.area-title {
+  font-size: 32px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid black;
+  line-height: 1;
+}
+
+.area p.area-title span {
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a00404;
+}
+
+.area p {
+  font-size: 24px;
+  line-height: 12px;
+}
+
+/* 第二區 */
+.box {
+  border-left: 1px solid #96a9c4;
+  padding-left: 24px;
+  margin-left: 24px;
+}
+.box p.area-detail {
+  margin: 0 0 24px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.box .area-list p {
+  font-size: 24px;
+  line-height: 36px;
+}
+.box img {
+  margin: 8px 0;
+}
+
+/* 滿版共用 */
+.areaFull {
+  padding: 24px 0 20px;  
+  /* 文字"語言"到底為36px==>20px+語言span的pb16px */
+  margin-bottom: 80px;
+  color: white;
+  background-color: #415165;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.areaFull p {
+  width: 996px;
+  font-size: 32px;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.areaFull p span {
+  font-size: 24px;
+}
+.areaFull .row-down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.areaFull ul.row-down li {
+line-height: 1.5;
+padding-bottom: 16px;
+}
+.areaFull ul.row-down li a{
+  text-decoration:none;
+  color: white;
+}
+
+
+/* 個別設定 */
+
+.pb16 {
+  padding-bottom: 16px !important;
+}
+.pb24 {
+  padding-bottom: 24px !important;
+}
+.pl24{
+padding-left: 24px !important;
+}
+.pb0{
+  padding-bottom: 0 !important;
+}
+.mt0 {
+  margin-top: 0px !important;
+}
+.mb0 {
+  margin-bottom: 0px !important;
+}
+.mb16{
+  margin-bottom: 16px !important;
+}
+.fz20 {
+  font-size: 20px !important;
+}
+.fz0{
+  font-size: 0 !important;
+}
+.mt72 {
+  margin-top: 72px !important;
+}
+.align-items-center{
+align-items: center !important;
+}
+.bl{
+  border-left: 1px solid white;
+
+}
