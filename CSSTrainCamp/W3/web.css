@@ -62,7 +62,7 @@ p {
     font-size: 16px;
 }
 
-li a, li a:visited {
+li a, li a:visited,button a, button a:visited {
     color: white;
 }
 
